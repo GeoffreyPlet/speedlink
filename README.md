@@ -1,27 +1,62 @@
 # Speedlink
+Création d'un site internet, qui liste les liens utiles, eux lors d'une formation de developpeur concepteur d'application
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.4.
+# Technologie
+## Front
+ - Angulare
+ - Bootstrap
+ - SASS
 
-## Development server
+# Pages
+ - accueil : Page d'accueil du site
+    {
+        - Header avec la nav, titre du site, dropdown des langages.
+        - Un carousel des langages avec 3 link.
+        - Footer avec, copyright, list des pages.
+        
+    }
+ - list_langage : Page de la liste des langages
+    {
+        - Header avec la nav, titre du site, dropdown des langages.
+        - Liste des langages avec, la cover, le name, la description.
+        - Footer avec, copyright, list des pages.
+    }
+ - list_link : Page de la liste des link.
+    {
+        - Header avec la nav, titre du site, dropdown des langages.
+        - Liste des link avec, la cover, le name, la description, le langage concerné.
+        - Footer avec, copyright, list des pages.
+    }
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+# Class
+ - Langage [DONE]
+  - id (numerique)
+  - name (string)
+  - description (string)
+  - cover (string)
 
-## Build
+ - Link [DONE]
+  - id (numerique)
+  - name (string)
+  - description (string)
+  - cover (string)
+  - id_langage (numerique)
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+# Component
+ - header.component : Header du site avec une nav, une décoraction
+ - footer.component : Footer du site avec un copyright, une liste des pages du site.
+ - carousel.component : les langages 1 par 1, qui contiens 3 links.
+ - liste-langage.component : listte les langages du site.
+ - liste-link.component : liste des links du site.
 
-## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+# Update
+ ## Pages
+  - list_link_single : Page d'un seul link.
+    {
+        - Header avec la nav, titre du site, dropdown des langages.
+        - Liste des link avec, la cover, le name, la description, le langage concerné.
+        - Footer avec, copyright, list des pages.
+    }
