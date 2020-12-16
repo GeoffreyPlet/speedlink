@@ -44,6 +44,11 @@ Création d'un site internet, qui liste les liens utiles, eux lors d'une formati
   - cover (string)
   - id_langage (numerique)
 
+
+# Service
+    - Langage : Permet la récupération des langages dans le dossier db.json.
+    - Link : Permet la récupération des langages dans le dossier db.json.
+
 # Component
  - header.component : Header du site avec une nav, une décoraction
  - footer.component : Footer du site avec un copyright, une liste des pages du site.

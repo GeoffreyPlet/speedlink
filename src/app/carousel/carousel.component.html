@@ -1,1 +1,37 @@
-<p>carousel works!</p>
+<!--
+  Debut bannier header
+-->
+
+<!-- Carousel slick -->
+<ngx-slick-carousel class="carousel" 
+                        #slickModal="slick-carousel" 
+                        [config]="slideConfig" 
+                        (init)="slickInit($event)"
+                        (breakpoint)="breakpoint($event)"
+                        (afterChange)="afterChange($event)"
+                        (beforeChange)="beforeChange($event)">
+                        
+        <div ngxSlickItem *ngFor="let langage of mesLangages" class="slide" [id]="langage.id">
+          <div class="d-flex flex-column justify-content-center" style="height: 380px;">
+            <h1  class="text-uppercase" style="font-size: 4rem;"> {{ langage.name }} </h1>
+          </div>
+              
+        </div>
+    </ngx-slick-carousel>
+
+    <app-langage-link [currentLangage]="currentLangage" [currentLinks]="currentLinks"></app-langage-link>
+    
+<!--     
+    Bouton d'administration
+
+    <button (click)="addSlide()">Add</button>
+    <button (click)="removeSlide()">Remove</button>
+    <button (click)="slickModal.slickGoTo(2)">slickGoto 2</button>
+    <button (click)="slickModal.unslick()">unslick</button> -->
+
+
+
+
+<!--
+  Fin bannier header
+-->

@@ -1,1 +1,35 @@
-<p>header works!</p>
+<!--
+    Debut nav
+-->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+      <div class="container d-flex">
+        <a class="navbar-brand" href="#">{{ title }}</a>
+        <button class="navbar-toggler ml-auto d-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse d-block text-right" id="navbarSupportedContent" >
+          <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Langage
+              </a>
+              <ul class="dropdown-menu text-right" aria-labelledby="navbarDropdown">
+                <li *ngFor="let langage of mesLangages">
+                  <a href="" class="dropdown-item text-uppercase "> {{ langage.name }} </a>
+
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+    </div>
+  </div>
+</nav>
+<!--
+    Fin nav
+-->
+<!-- carousel.component -->
+<app-carousel></app-carousel>
+
+

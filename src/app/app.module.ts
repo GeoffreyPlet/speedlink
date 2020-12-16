@@ -1,5 +1,9 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
+
+
+
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
@@ -8,6 +12,14 @@ import { CarouselComponent } from './carousel/carousel.component';
 import { ListeLangageComponent } from './liste-langage/liste-langage.component';
 import { ListeLinkComponent } from './liste-link/liste-link.component';
 
+/**
+ * Mes import
+ * Module pour slick carousel
+ * https://www.npmjs.com/package/ngx-slick-carousel
+ */
+import { SlickCarouselModule } from 'ngx-slick-carousel';
+import { LangageLinkComponent } from './langage-link/langage-link.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -15,10 +27,13 @@ import { ListeLinkComponent } from './liste-link/liste-link.component';
     FooterComponent,
     CarouselComponent,
     ListeLangageComponent,
-    ListeLinkComponent
+    ListeLinkComponent,
+    LangageLinkComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HttpClientModule,
+    SlickCarouselModule
   ],
   providers: [],
   bootstrap: [AppComponent]

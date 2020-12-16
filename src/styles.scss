@@ -1,1 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
+.slick-arrow{
+    z-index: 2 !important;
+    color: #fff !important;
+}
+.slick-prev{
+    left: 0 !important;
+}
+.slick-next{
+    right: 0 !important;
+}
+body{
+    overflow-x: hidden;
+}
