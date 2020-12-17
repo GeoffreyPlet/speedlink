@@ -18,4 +18,8 @@ export class UserService {
    return this.http.put<User>('http://localhost:3000/admin/'+user.id, user).toPromise();
     
   }
+  closeSession(user: User): Promise<User>{
+    return this.http.put<User>('http://localhost:3000/admin/'+user.id, user).toPromise();
+     
+   }
 }
