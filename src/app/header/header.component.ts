@@ -12,7 +12,7 @@ export class HeaderComponent implements OnInit {
    * Input value
    */
   @Input() title: string;
-  
+  @Input() session: Boolean;
 
   /**
    * Je crée mon object langage
@@ -39,6 +39,21 @@ export class HeaderComponent implements OnInit {
     this.langageService.getLangages().then(langages => {
       this.mesLangages = langages;
     });
+  }
+  toggle(){
+    let divToggle = document.querySelector('#back-body').getAttribute('ngModel');
+    if(divToggle === 'block'){
+      document.querySelector('#back-body').setAttribute('ngModel', 'none');
+      document.getElementById('back-body').hidden = true;
+      document.getElementById('body').hidden = true;
+    }else{
+      document.querySelector('#back-body').setAttribute('ngModel', 'block');
+      document.getElementById('back-body').hidden = false;
+      document.getElementById('body').hidden = false;
+    }
+  }
+  lougOut(){
+    this.session = false;
   }
 
 }

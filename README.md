@@ -1,6 +1,12 @@
 # Speedlink
 Création d'un site internet, qui liste les liens utiles, eux lors d'une formation de developpeur concepteur d'application
 
+# Fonctionnalitée 
+ - On pourra cliquer sur un lien et avoir le page de ce lien
+ - Faire une recherche de lien par langage
+ - Choisir un langag
+ - Un administrateur pourra se connecter et ajouter, modifier, supprimer un liens
+
 # Technologie
 ## Front
  - Angulare
@@ -44,6 +50,11 @@ Création d'un site internet, qui liste les liens utiles, eux lors d'une formati
   - cover (string)
   - id_langage (numerique)
 
+ - admin
+  - id (numerique)
+  - login (string)
+  - mdp (string)
+
 
 # Service
     - Langage : Permet la récupération des langages dans le dossier db.json.
@@ -65,3 +76,7 @@ Création d'un site internet, qui liste les liens utiles, eux lors d'une formati
         - Liste des link avec, la cover, le name, la description, le langage concerné.
         - Footer avec, copyright, list des pages.
     }
+
+# Question
+ ## Securitée
+ - Pour mes formulaires sont t'ils sécurisé ?

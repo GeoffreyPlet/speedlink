@@ -4,10 +4,10 @@
     color: #fff !important;
 }
 .slick-prev{
-    left: 0 !important;
+    left: 20px !important;
 }
 .slick-next{
-    right: 0 !important;
+    right: 20px !important;
 }
 body{
     overflow-x: hidden;
@@ -30,5 +30,10 @@ body{
 .text-white{
     color: #fff !important;
 }
-
+.pointer{
+    cursor: pointer;
+}
+.pointer:hover a{
+    color: #1d4589 !important;
+}
 

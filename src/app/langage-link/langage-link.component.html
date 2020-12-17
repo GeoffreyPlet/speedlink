@@ -13,7 +13,7 @@
                         {{ link.description }} <br>
                         
                     </div>
-                    <p class="text-right"> <a href="">{{ link.name }}  {{currentLangage.name}}</a></p>
+                    <p class="text-right"> <a href="{{ link.name }}" target="_blank">{{ link.name }}</a></p>
                 </div>
                 <div class="col-sm-12 col-lg-6 ">
                     <div class="grid-img color-transparent color-tint-border shadow">
@@ -31,11 +31,11 @@
             <!-- Debut link row avec reverse -->
             <div *ngIf=" (i % 2)" class="row flex-row-reverse  mb-5">
                 <div class="col-sm-12 col-lg-6 align-self-center">
-                    <div class="grid  speed-border pl-4 text-white">
+                    <div class="grid  speed-border-reverse pr-4 text-white">
                         {{ link.description }} <br>
                         
                     </div>
-                    <p class="text-right"> <a href="">{{ link.name }}  {{currentLangage.name}}</a></p>
+                    <p class="text-left"> <a href="{{ link.name }}" target="_blank">{{ link.name }}</a></p>
                 </div>
                 <div class="col-sm-12 col-lg-6 ">
                     <div class="grid-img color-transparent color-tint-border shadow">

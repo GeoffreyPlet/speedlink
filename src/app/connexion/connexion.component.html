@@ -1,0 +1,73 @@
+
+
+
+
+<div ngModel="none" class="pointer" id="back-body" (click)="toggle()" hidden>
+    
+</div>
+<div class="container" id="body" hidden>
+    <div class="row py-5 px-3">
+        <div class="col-12 border-bottom text-center mb-2 pb-3">
+            <h3>Connexion</h3>
+        </div>
+        <form class="w-50 m-auto pt-3" (ngSubmit)="addLink()" #errorLink="ngForm">
+            <div class="form-group text-center">
+                <label for="login">Username</label>
+                <input type="text" name="userlogin" id="login" [(ngModel)]="user.login" class="form-control" required #errorLogin="ngModel">
+
+                <!-- Partie error -->
+                <div *ngIf="errorLogin.dirty && errorLogin.invalid" class="text-danger" >
+                    Username est requit
+                </div>
+                <div *ngIf="errorLogin.dirty && errorLogin.hasError('required')" class="text-danger" >
+                    Username est requit
+                </div>
+
+
+            </div>
+            
+            <div class="form-group text-center">
+                <label for="mdp">Mot de passe</label>
+                <input type="password" name="usermdp" id="mdp" [(ngModel)]="user.mdp" class="form-control" required #errorMdp="ngModel">
+                 
+                <!-- Partie error -->
+                <div *ngIf="errorMdp.dirty && errorMdp.invalid" class="text-danger" >
+                    Le mot de passe est requit
+                </div>
+                 <div *ngIf="errorMdp.dirty && errorMdp.hasError('required')" class="text-danger" >
+                    Le mot de passe est requit
+                </div>
+            </div>
+            <div class="text-danger" id="loadError" hidden>
+                Indentifiant incorrect.
+            </div>
+            <div class="text-center">
+                <button class="btn" [disabled]="errorLink.invalid">
+                    Connexion
+                </button>
+            </div>
+            
+            
+    
+            <!-- <label for="url">Url</label>
+            <input type="text" name="urlLink" id="url">
+    
+            <label for="description">Description</label>
+            <input type="textarea" name="descriptionLink" id="description">
+    
+            <label for="cover">Image</label>
+            <input type="text" name="coverLink" id="cover">
+    
+            <label for="coverDescicription">Description de l'image</label>
+            <input type="text" name="coverDescicriptionLink" id="coverDescicription">
+    
+            <label for="langage">Langage</label>
+            <select name="langageLink" id="langage">
+                <option value=""></option>
+            </select> -->
+        </form>
+    </div>
+    
+    
+</div>
+<app-header [session]="session" [title]="title"></app-header>

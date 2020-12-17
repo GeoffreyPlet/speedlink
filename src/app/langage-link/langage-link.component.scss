@@ -11,6 +11,9 @@
 .speed-border{
     border-left: 5px solid  #1d4589
 }
+.speed-border-reverse{
+    border-right: 5px solid  #1d4589
+}
 
 .filtre{
     position: relative;
@@ -34,6 +37,6 @@
 }
 @media (max-width: 992px){
     .row{
-        flex-direction: column-reverse;
+        flex-direction: column-reverse !important;
     }
 }

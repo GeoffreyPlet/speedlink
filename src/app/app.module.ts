@@ -1,6 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
+import { RouterModule } from '@angular/router';
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -19,6 +21,8 @@ import { ListeLinkComponent } from './liste-link/liste-link.component';
  */
 import { SlickCarouselModule } from 'ngx-slick-carousel';
 import { LangageLinkComponent } from './langage-link/langage-link.component';
+import { ConnexionComponent } from './connexion/connexion.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
@@ -28,12 +32,18 @@ import { LangageLinkComponent } from './langage-link/langage-link.component';
     CarouselComponent,
     ListeLangageComponent,
     ListeLinkComponent,
-    LangageLinkComponent
+    LangageLinkComponent,
+    ConnexionComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
-    SlickCarouselModule
+    SlickCarouselModule,
+    FormsModule,
+    RouterModule.forRoot([
+      { path: '', component: HomeComponent }
+    ])
   ],
   providers: [],
   bootstrap: [AppComponent]
