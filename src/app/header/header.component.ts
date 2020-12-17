@@ -1,6 +1,8 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Langage } from '../langage';
 import { LangageService } from '../service/langage.service';
+import { UserService } from '../service/user.service';
+import { User } from '../user';
 
 @Component({
   selector: 'app-header',
@@ -22,6 +24,8 @@ export class HeaderComponent implements OnInit {
     /* Tableau de langage qui nous premettera de les utiliser dans notre header.component.html */
     mesLangages: Langage[];
 
+    user: User = new User();
+
     
 
   /**
@@ -30,7 +34,7 @@ export class HeaderComponent implements OnInit {
    * @class LangageService
    * Affirme que notre header.component a besoins de noutre class LangageService 
    */
-  constructor(private langageService: LangageService) { }
+  constructor(private langageService: LangageService, private userService: UserService) { }
 
   ngOnInit(): void {
     /**
@@ -53,7 +57,12 @@ export class HeaderComponent implements OnInit {
     }
   }
   lougOut(){
-    this.session = false;
+    this.userService.getUser('admin', 'admin').then( user => {
+      this.user = user[0];
+      this.user.session = false;
+      this.userService.loadSession(this.user);
+      this.session = this.user.session;
+    });
   }
 
 }

@@ -14,12 +14,9 @@ export class UserService {
     return this.http.get<User>('http://localhost:3000/admin?login='+login+'&mdp='+mdp+'').toPromise();
   }
 
-  openSession(user: User): Promise<User>{
+  loadSession(user: User): Promise<User>{
    return this.http.put<User>('http://localhost:3000/admin/'+user.id, user).toPromise();
     
   }
-  closeSession(user: User): Promise<User>{
-    return this.http.put<User>('http://localhost:3000/admin/'+user.id, user).toPromise();
-     
-   }
+  
 }

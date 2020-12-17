@@ -23,6 +23,8 @@ import { SlickCarouselModule } from 'ngx-slick-carousel';
 import { LangageLinkComponent } from './langage-link/langage-link.component';
 import { ConnexionComponent } from './connexion/connexion.component';
 import { HomeComponent } from './home/home.component';
+import { AdminLangageComponent } from './admin-langage/admin-langage.component';
+import { AdminComponent } from './admin/admin.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +36,9 @@ import { HomeComponent } from './home/home.component';
     ListeLinkComponent,
     LangageLinkComponent,
     ConnexionComponent,
-    HomeComponent
+    HomeComponent,
+    AdminLangageComponent,
+    AdminComponent
   ],
   imports: [
     BrowserModule,
@@ -42,7 +46,13 @@ import { HomeComponent } from './home/home.component';
     SlickCarouselModule,
     FormsModule,
     RouterModule.forRoot([
-      { path: '', component: HomeComponent }
+      /**
+       * Route de mon site
+       */
+      { path: '', component: HomeComponent },
+      { path: 'admin', component: AdminComponent },
+      { path: 'admin/langage', component: AdminLangageComponent },
+
     ])
   ],
   providers: [],

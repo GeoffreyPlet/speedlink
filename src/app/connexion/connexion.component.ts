@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Router } from '@angular/router';
+
 import { UserService } from '../service/user.service';
 import { User } from '../user';
 
@@ -13,13 +14,21 @@ export class ConnexionComponent implements OnInit {
   /**
    * Variable utile au html
    */
-  user: User = new User();
-  session: Boolean = false;
+  
 
   constructor(private userService: UserService, private route: Router) { }
 
   ngOnInit(): void {
+    this.userService.getUser('admin', 'admin').then(user => {
+      
+      this.userSession = user[0];
+      this.session = this.userSession.session;
+    });
+    
   }
+  userSession: User = new User();
+  user: User = new User();
+  session: Boolean;
   toggle(){
     let divToggle = document.querySelector('#back-body').getAttribute('ngModel');
     if(divToggle === 'block'){
@@ -37,19 +46,22 @@ export class ConnexionComponent implements OnInit {
 
     this.userService.getUser(this.user.login, this.user.mdp).then(
       user => {
-        if(user[0]){
+        if(user[0].session === false){
           document.getElementById('loadError').hidden = true;
           user[0].session = true;
-          this.userService.openSession(user[0]);
-          this.session = true;
+          this.userService.loadSession(user[0]).then( user =>{
+            
+            this.session = user.session;
+            location.reload();
+            
+          }
+            
+          );
+          
           document.getElementById('back-body').hidden = true;
           document.getElementById('body').hidden = true;
         }
-        else{
-          this.session = false;
-          this.userService.openSession(user[0]);
-          document.getElementById('loadError').hidden = false;
-        }
+        
       }
     )
   }
