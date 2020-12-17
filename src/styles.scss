@@ -11,4 +11,24 @@
 }
 body{
     overflow-x: hidden;
+    background-color: #000;
 }
+
+.color{
+    background-color: #04307c !important;
+}
+.color-transparent{
+    background: rgb(4,48,124) !important;
+    background: linear-gradient(0deg, rgba(4,48,124,1) 0%, rgba(29,69,137,0.19852076802507834) 100%) !important;
+}
+.color-tint{
+    background-color: #1d4589 !important;
+}
+.color-tint-border{
+    border: 1px solid #1d4589 !important;
+}
+.text-white{
+    color: #fff !important;
+}
+
+

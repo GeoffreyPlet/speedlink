@@ -95,9 +95,9 @@ ngOnInit(): void {
   this.langageService.getLangages().then(langages => {
     this.mesLangages = langages;
     this.currentLangage = this.mesLangages[0];
-  });
 
-  /**
+
+     /**
      * Récupere les links de db.json
      */
     this.linkService.getLinks().then( links => {
@@ -106,6 +106,12 @@ ngOnInit(): void {
         this.currentLinks.push(links[i]);
       } 
     });
+
+  });
+
+  
+
+ 
 
   
   
