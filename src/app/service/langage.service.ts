@@ -15,4 +15,11 @@ export class LangageService {
   getLangages(): Promise<Langage[]> {
     return this.http.get<Langage[]>('http://localhost:3000/langages').toPromise();
   }
+
+  /**
+   * Renvoie un langage selon l'id
+   */
+  getLangageWithId(id): Promise<Langage> {
+    return this.http.get<Langage>('http://localhost:3000/langages/'+id).toPromise();
+  }
 }

@@ -17,7 +17,7 @@ export class CarouselComponent implements OnInit {
    * @param slidesToShow Nombre de slide qu'on affiche
    * @param slidesToScroll Nombre de slide qui se décale pour le scroll
    */
-  slideConfig = {"slidesToShow": 1, "slidesToScroll": 1, "autoplay": false};
+  slideConfig = {"slidesToShow": 1, "slidesToScroll": 1, "autoplay": true};
   
 
 /*

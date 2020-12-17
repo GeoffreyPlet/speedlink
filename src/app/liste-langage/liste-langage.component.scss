@@ -1,0 +1,36 @@
+.fixe{
+    height: 75px;
+    width: 100%;
+}
+@media (max-width: 992px){
+    .fixe{
+        height: 162px;
+    }
+}
+.row p:hover{
+    background-color: #04307c !important;
+    transform: scale(1.2);
+}
+#from-langage{
+    position: fixed;
+    right: 0;
+  
+}
+.close{
+    width: 54px;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: red;
+    color: #fff;
+    font-size: 2rem;
+}
+.supprimer{
+    background-color: red;
+
+}
+.modif{
+    background-color: grey;
+}

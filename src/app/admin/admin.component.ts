@@ -16,7 +16,7 @@ export class AdminComponent implements OnInit {
   ngOnInit(): void {
     this.userService.getUser('admin', 'admin').then( user => {
       this.session = user[0].session;
-    })
+    });
   }
 
 }
