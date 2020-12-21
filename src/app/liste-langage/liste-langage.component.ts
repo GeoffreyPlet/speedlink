@@ -4,7 +4,13 @@ import { Link } from '../link';
 import { LangageService } from '../service/langage.service';
 import { LinkService } from '../service/link.service';
 import { UserService } from '../service/user.service';
-import { User } from '../user';
+
+
+
+
+import { HttpResponse, HttpEventType } from '@angular/common/http';
+import { FormControl, FormArray, FormBuilder, Validators } from '@angular/forms';
+
 
 @Component({
   selector: 'app-liste-langage',
@@ -21,6 +27,8 @@ export class ListeLangageComponent implements OnInit {
   selectLink: Link[] = [];
   display: Boolean = false;
 
+  percentUploaded = [0];
+
 
   ngOnInit(): void {
     this.userService.getUser('admin', 'admin').then( user => {
@@ -34,8 +42,7 @@ export class ListeLangageComponent implements OnInit {
     this.selectLink.splice(0, this.selectLink.length);
     this.serviceLangage.getLangageWithId(id).then( langage => {
       this.selectLangage = langage;
-    });
-    this.linkService.getLinks().then(links => {
+      this.linkService.getLinks().then(links => {
       for(let i = 0; i < links.length; i++){
         if(links[i].id_langage === this.selectLangage.id){
           this.selectLink.push(links[i]);
@@ -43,6 +50,8 @@ export class ListeLangageComponent implements OnInit {
        
       }
     });
+    });
+    
     
   }
     close(){
@@ -53,6 +62,38 @@ export class ListeLangageComponent implements OnInit {
     toggleActionBarre(){
       this.display = true;
       
+    }
+    valideModifLangage(){
+      const selectedFileList = (<HTMLInputElement>document.getElementById('cover')).files; 
+      
+      this.uploadFile(selectedFileList[0]);
+      console.log(selectedFileList[0]);
+
+      
+      
+    }
+    fileUploadSuccess() {
+      let flag = true;
+      this.percentUploaded.forEach(n => {
+        if (n !== 100) {
+          flag = false;
+        }
+      });
+    }
+    uploadFile(file: File) {
+      const formData = new FormData();
+      formData.append("file", file);
+      this.serviceLangage.uploadImage(formData)
+        .subscribe(event => {
+          if (event.type === HttpEventType.UploadProgress) {
+            this.percentUploaded[file.size] = Math.round(100 * event.loaded / event.total);
+          } else if (event instanceof HttpResponse) {
+            console.log(file.name + ', Size: ' + file.size + ', Uploaded URL: ' + event.body.link);
+            this.fileUploadSuccess();
+          }
+        },
+          err => console.log(err)
+        );
     }
     
   
