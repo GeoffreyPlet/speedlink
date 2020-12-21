@@ -9,7 +9,6 @@ import { UserService } from '../service/user.service';
 
 
 import { HttpResponse, HttpEventType } from '@angular/common/http';
-import { FormControl, FormArray, FormBuilder, Validators } from '@angular/forms';
 
 
 @Component({
@@ -27,7 +26,6 @@ export class ListeLangageComponent implements OnInit {
   selectLink: Link[] = [];
   display: Boolean = false;
 
-  percentUploaded = [0];
 
 
   ngOnInit(): void {
@@ -64,38 +62,24 @@ export class ListeLangageComponent implements OnInit {
       
     }
     valideModifLangage(){
-      const selectedFileList = (<HTMLInputElement>document.getElementById('cover')).files; 
-      
-      this.uploadFile(selectedFileList[0]);
-      console.log(selectedFileList[0]);
-
-      
-      
-    }
-    fileUploadSuccess() {
-      let flag = true;
-      this.percentUploaded.forEach(n => {
-        if (n !== 100) {
-          flag = false;
-        }
+      this.serviceLangage.updateLangage(this.selectLangage).then( langage => {
+        location.reload();
       });
     }
-    uploadFile(file: File) {
-      const formData = new FormData();
-      formData.append("file", file);
-      this.serviceLangage.uploadImage(formData)
-        .subscribe(event => {
-          if (event.type === HttpEventType.UploadProgress) {
-            this.percentUploaded[file.size] = Math.round(100 * event.loaded / event.total);
-          } else if (event instanceof HttpResponse) {
-            console.log(file.name + ', Size: ' + file.size + ', Uploaded URL: ' + event.body.link);
-            this.fileUploadSuccess();
-          }
-        },
-          err => console.log(err)
-        );
+    trash(){
+      if(this.selectLangage.trash){
+        this.selectLangage.trash = false;
+        document.querySelector('#row-'+this.selectLangage.id+' p').classList.add('color-tint');
+        document.querySelector('#row-'+this.selectLangage.id+' p').classList.remove('dis');
+      }
+      else{
+        this.selectLangage.trash = true;
+        document.querySelector('#row-'+this.selectLangage.id+' p').classList.remove('color-tint');
+        document.querySelector('#row-'+this.selectLangage.id+' p').classList.add('dis');
+        
+      }
+      this.serviceLangage.trashLangage(this.selectLangage);
     }
-    
-  
+ 
 
 }

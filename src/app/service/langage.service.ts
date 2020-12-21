@@ -7,7 +7,7 @@ import { Langage } from '../langage';
   providedIn: 'root'
 })
 export class LangageService {
-  url = 'https://file.io';
+  apiUrl = 'http://localhost:3000/langages/';
 
   constructor( private http: HttpClient) { }
 
@@ -15,21 +15,28 @@ export class LangageService {
    * Creation de la méthode qui retourne mon tableau de langage
    */
   getLangages(): Promise<Langage[]> {
-    return this.http.get<Langage[]>('http://localhost:3000/langages').toPromise();
+    return this.http.get<Langage[]>(this.apiUrl).toPromise();
   }
 
   /**
    * Renvoie un langage selon l'id
    */
   getLangageWithId(id): Promise<Langage> {
-    return this.http.get<Langage>('http://localhost:3000/langages/'+id).toPromise();
+    return this.http.get<Langage>(this.apiUrl+''+id).toPromise();
+  }
+
+
+  /**
+   * Update d'un langage
+   */
+  updateLangage(langage: Langage): Promise<Langage>{
+    return this.http.put<Langage>(this.apiUrl+''+langage.id, langage).toPromise();
   }
 
   /**
-   * Upload d'image
+   * Désactiver ou activer le langage
    */
-  uploadImage(formData: FormData): Observable<any> {
-    
-    return this.http.post(this.url, formData, { observe: 'events',  reportProgress: true });
+  trashLangage(langage: Langage): Promise<Langage>{
+    return this.http.put<Langage>(this.apiUrl+''+langage.id, langage).toPromise();
   }
 }

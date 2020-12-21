@@ -4,58 +4,64 @@
       "id": 0,
       "name": "css",
       "description": "Langage front, permet mettre en page les éléments du site",
-      "cover": ""
+      "cover": "C:\\fakepath\\3971.jpg",
+      "trash": false
     },
     {
       "id": 1,
       "name": "html",
       "description": "Langage front, permet mettre de crée les éléments du site",
-      "cover": ""
+      "cover": "hgfhgfhfghg",
+      "trash": true
     },
     {
       "id": 2,
       "name": "javascript",
       "description": "Langage front, permet mettre dynamiser les éléments du site",
-      "cover": ""
+      "cover": "",
+      "trash": true
     },
     {
       "id": 3,
       "name": "php",
       "description": "Langage back, permet de mettre en relation un server et un client",
-      "cover": ""
+      "cover": "",
+      "trash": true
     },
     {
       "id": 4,
       "name": "git",
       "description": "Langage back, permet de mettre en relation un server et un client",
-      "cover": ""
+      "cover": "",
+      "trash": true
     },
     {
       "id": 5,
       "name": "jquery",
       "description": "Langage back, permet de mettre en relation un server et un client",
-      "cover": ""
+      "cover": "",
+      "trash": true
     },
     {
       "id": 6,
       "name": "ionic",
       "description": "Langage back, permet de mettre en relation un server et un client",
-      "cover": ""
+      "cover": "",
+      "trash": true
     },
     {
       "id": 7,
       "name": "angular",
       "description": "Langage back, permet de mettre en relation un server et un client",
-      "cover": ""
+      "cover": "",
+      "trash": true
     },
     {
       "id": 8,
       "name": "mysql",
       "description": "Langage back, permet de mettre en relation un server et un client",
-      "cover": ""
-    },
-    {
-      "id": 9
+      "cover": "",
+      "trash": true
     }
   ],
   "links": [
