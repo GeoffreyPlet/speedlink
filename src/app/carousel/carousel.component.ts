@@ -17,7 +17,7 @@ export class CarouselComponent implements OnInit {
    * @param slidesToShow Nombre de slide qu'on affiche
    * @param slidesToScroll Nombre de slide qui se décale pour le scroll
    */
-  slideConfig = {"slidesToShow": 1, "slidesToScroll": 1, "autoplay": true};
+  slideConfig = {"slidesToShow": 1, "slidesToScroll": 1, "autoplay": false};
   
 
 /*
@@ -38,7 +38,7 @@ export class CarouselComponent implements OnInit {
    * Initalisation du carousel
    */
   slickInit(e) {
-    console.log('slick initialized');
+    
     var div = document.getElementsByClassName('slick-active')[0].id
     this.currentLangage = this.mesLangages[div];
   }
@@ -97,15 +97,17 @@ ngOnInit(): void {
      * this.lagages est mon tableau langages: Langage[] - Ref langage-link.component
      * Récupere les langages de db.json
      */
+    
   this.langageService.getLangagesNoTrash().then(langages => {
     this.mesLangages = langages;
-    this.currentLangage = this.mesLangages[0];
+    
 
 
      /**
      * Récupere les links de db.json
      */
     this.linkService.getLinks().then( links => {
+      this.currentLangage = this.mesLangages[0];
       for(let i =0 ; i < links.length; i++){
         if(links[i].id_langage === this.currentLangage.id)
         this.currentLinks.push(links[i]);

@@ -5,14 +5,14 @@
       "name": "css",
       "description": "Langage front, permet mettre en page les éléments du site",
       "cover": "C:\\fakepath\\3971.jpg",
-      "trash": false
+      "trash": true
     },
     {
       "id": 1,
       "name": "html",
       "description": "Langage front, permet mettre de crée les éléments du site",
       "cover": "hgfhgfhfghg",
-      "trash": true
+      "trash": false
     },
     {
       "id": 2,
@@ -33,7 +33,7 @@
       "name": "git",
       "description": "Langage back, permet de mettre en relation un server et un client",
       "cover": "",
-      "trash": false
+      "trash": true
     },
     {
       "id": 5,
@@ -62,6 +62,13 @@
       "description": "Langage back, permet de mettre en relation un server et un client",
       "cover": "",
       "trash": true
+    },
+    {
+      "id": 9,
+      "name": "bootstrap",
+      "description": "Framework front end, facilite l'intégration html et réduit la charge de CSS",
+      "cover": "",
+      "trash": false
     }
   ],
   "links": [
@@ -152,6 +159,182 @@
       "cover": "testCover",
       "description_cover": "lorem lorem lorem lorem lorem loreml orem",
       "id_langage": 4
+    },
+    {
+      "name": "https://developer.mozilla.org/fr/docs/Web/HTML",
+      "description": "HTML permet d'inclure des images et d'autres contenus dans les pages web. Grâce à HTML, chacun peut créer des sites web aussi bien statiques que dynamiques.",
+      "cover": "HTML",
+      "description_cover": "Hyper Text Markup Language",
+      "id": 11,
+      "id_langage": 1
+    },
+    {
+      "name": "https://youtu.be/8FqZZrbnwkM?t=9",
+      "cover": "Youtube tuto",
+      "description_cover": "Cours complet HTML/CSS",
+      "description": "Tutoriel pour comprendre, apprendre le HTML et le CSS, réservé au débutants.",
+      "id": 12,
+      "id_langage": 1
+    },
+    {
+      "name": "https://developer.mozilla.org/fr/docs/Web/Guide/HTML/Formulaires/Mon_premier_formulaire_HTML",
+      "cover": "Web doc - MDN",
+      "description": "Le premier article de notre série vous offre une toute première expérience de création de formulaire en HTML, y compris sa conception, sa mise en œuvre.",
+      "description_cover": "Mon premier formulaire HTML",
+      "id": 13,
+      "id_langage": 1
+    },
+    {
+      "name": "https://developer.mozilla.org/fr/docs/Web/HTML/Element/Form",
+      "description": "L'élément HTML form représente une section d'un document qui contient des contrôles interactifs permettant à un utilisateur d'envoyer des données à un serveur web.",
+      "cover": "Doc web - MDN",
+      "description_cover": "Formulaire",
+      "id": 14,
+      "id_langage": 1
+    },
+    {
+      "name": "https://dev.w3.org/html5/html-author/charref",
+      "cover": "dev w3",
+      "description_cover": "Caractère spécial",
+      "description": "Retrouver les caractères spécial et leur intégration dans le HTML,. Des lettre jusqu'aux forme intégré toute vos désires.",
+      "id": 15,
+      "id_langage": 1
+    },
+    {
+      "name": "https://developer.mozilla.org/fr/docs/Web/HTML/Element/small",
+      "description": "L'élément HTML small permet de représenter des commentaires ou des textes à écrire en petits caractères (des termes d'un contrat, des mentions relatives au droit d'auteur, etc.) quelle que soit la présentation.",
+      "cover": "Doc web -MDN",
+      "description_cover": "small balise",
+      "id": 16,
+      "id_langage": 1
+    },
+    {
+      "name": "https://getbootstrap.com/docs/4.5/components/card/",
+      "description": "Bootstrap’s cards provide a flexible and extensible content container with multiple variants and options.",
+      "cover": "Bootstrap",
+      "description_cover": "Cards avec bootstrap",
+      "id": 17,
+      "id_langage": 9
+    },
+    {
+      "name": "https://wp-rocket.me/fr/blog/lazy-load-natif/",
+      "description": "Le lazy-load natif est une nouvelle technique qui permet au navigateur de différer le chargement des images. Comment fonctionne ce lazy-load natif ?",
+      "cover": "WP Rocket",
+      "description_cover": "Qu'est ce que le lazy-load",
+      "id": 18,
+      "id_langage": 1
+    },
+    {
+      "name": "https://getbootstrap.com/docs/4.5/utilities/shadows/",
+      "description": "Utiliser la class shadow avec bootstrap, créer un effet d'ombre rapide sans css",
+      "cover": "Bootstrap",
+      "description_cover": "Shadow avec bootstrap",
+      "id": 19,
+      "id_langage": 9
+    },
+    {
+      "name": "https://getbootstrap.com/docs/4.5/utilities/borders/#sizes",
+      "description": "Crée des border grâce à bootstrap, moins de css et plus rapide.",
+      "cover": "Bootstrap",
+      "description_cover": "border avec bootstrap",
+      "id": 20,
+      "id_langage": 9
+    },
+    {
+      "name": "https://getbootstrap.com/docs/4.5/utilities/flex/",
+      "description_cover": "flex avec bootstrap",
+      "cover": "Bootstrap",
+      "description": "Disposition facile grâce au flex, utiliser bootstrap afin de réaliser un design rapidement et sans css.\n+",
+      "id": 21,
+      "id_langage": 9
+    },
+    {
+      "name": "https://maurice-chavelli.developpez.com/tutoriels/apprendre-svg/les-bases/",
+      "description": "Ce tutoriel est le premier d'une série de cours dont l'objectif est de vous apprendre à utiliser le format SVG.",
+      "cover": "Developpez",
+      "description_cover": " Tutoriel - SVG",
+      "id": 22,
+      "id_langage": 1
+    },
+    {
+      "name": "http://developer.mozilla.org/fr/docs/Web/API/Canvas_API/Tutoriel_canvas",
+      "description": "canvas est un nouvel élément HTML qui peut être utilisé pour dessiner des éléments graphiques à l'aide de scripts (habituellement JavaScript).",
+      "cover": "Doc web - MDN",
+      "description_cover": "Tutoriel - canvas",
+      "id": 23,
+      "id_langage": 1
+    },
+    {
+      "name": "https://developer.mozilla.org/fr/docs/Web/HTML/Attributs/autocomplete",
+      "description": "autocomplete permet d'indiquer à l'agent utilisateur qu'une assistance de saisie automatique peut être fournie et également d'indiquer le type de donnée attendu.",
+      "cover": "doc web - MDN",
+      "description_cover": "doc - autocomplete",
+      "id": 24,
+      "id_langage": 1
+    },
+    {
+      "name": "https://developer.mozilla.org/fr/docs/Web/HTML/Element/Input/password",
+      "description": "Les éléments input de type \"password\" permettent à utilisateur de saisir un mot de passe sans que celui-ci ne soit lisible à l'écran.",
+      "cover": "Doc web - MDN",
+      "description_cover": "Doc - input/password",
+      "id": 25,
+      "id_langage": 1
+    },
+    {
+      "name": " https://developer.mozilla.org/fr/docs/Web/HTML/Element/pre",
+      "description": "L'élément HTML pre représente du texte préformaté, généralement écrit avec une police à chasse fixe. Le texte est affiché tel quel, les espaces utilisés dans le document HTML seront retranscrits.",
+      "cover": "Doc web - MDN",
+      "description_cover": " Doc - balise pre",
+      "id": 26,
+      "id_langage": 1
+    },
+    {
+      "name": "https://getbootstrap.com/docs/4.5/layout/grid/",
+      "description": "Placez vos colonne, grâce à bootstrap. Responsive s'adapte à tout vos écrans. ",
+      "cover": "Bootstrap",
+      "description_cover": "colonne avec bootstrap",
+      "id": 27,
+      "id_langage": 9
+    },
+    {
+      "name": "https://getbootstrap.com/docs/4.5/components/dropdowns/",
+      "description": "Faire un dropdown facilement et rapidement grâce à bootstrap.",
+      "cover": "Bootstrap",
+      "description_cover": "dropdown avec bootstrap",
+      "id": 28,
+      "id_langage": 9
+    },
+    {
+      "name": "https://getbootstrap.com/docs/4.5/components/modal/",
+      "cover": "Bootstrap",
+      "description_cover": "modal avec bootstrap",
+      "description": "Réalisez votre modal et afficher des information ou d'autre fonctionnalité.",
+      "id": 29,
+      "id_langage": 9
+    },
+    {
+      "name": "https://developer.mozilla.org/fr/docs/Web/HTML/Attributs_universels/tabindex",
+      "description": "L'attribut universel tabindex est un entier indiquant si l'élément peut capturer le focus et si c'est le cas, dans quel ordre il le capture lors de la navigation au clavier (généralement à l'aide de la touche Tab).",
+      "cover": "Doc web - MDN",
+      "description_cover": "tabindex",
+      "id": 30,
+      "id_langage": 1
+    },
+    {
+      "name": "https://logotypemaker.com/",
+      "description": "Créez votre logo",
+      "description_cover": "création",
+      "cover": "logotypemarker",
+      "id": 31,
+      "id_langage": 1
+    },
+    {
+      "name": "https://getbootstrap.com/docs/4.5/components/spinners/",
+      "description_cover": "spinner avec bootstrap",
+      "cover": "Bootstrap",
+      "description": "Icone de chargement facile et rapide.",
+      "id": 32,
+      "id_langage": 9
     }
   ],
   "admin": [

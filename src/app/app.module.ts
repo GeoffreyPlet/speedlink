@@ -26,6 +26,7 @@ import { HomeComponent } from './home/home.component';
 import { AdminLangageComponent } from './admin-langage/admin-langage.component';
 import { AdminComponent } from './admin/admin.component';
 import { AddLinkComponent } from './add-link/add-link.component';
+import { SingleLangageComponent } from './single-langage/single-langage.component';
 
 @NgModule({
   declarations: [
@@ -40,7 +41,8 @@ import { AddLinkComponent } from './add-link/add-link.component';
     HomeComponent,
     AdminLangageComponent,
     AdminComponent,
-    AddLinkComponent
+    AddLinkComponent,
+    SingleLangageComponent
   ],
   imports: [
     BrowserModule,
