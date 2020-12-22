@@ -56,6 +56,7 @@ import { SingleLangageComponent } from './single-langage/single-langage.componen
       { path: '', component: HomeComponent },
       { path: 'admin', component: AdminComponent },
       { path: 'admin/langage', component: AdminLangageComponent },
+      { path: 'langage/:id', component: SingleLangageComponent },
 
     ])
   ],

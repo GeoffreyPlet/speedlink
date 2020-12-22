@@ -16,7 +16,9 @@
               </a>
               <ul class="dropdown-menu text-right" aria-labelledby="navbarDropdown">
                 <li *ngFor="let langage of mesLangages">
-                  <a href="" class="dropdown-item text-uppercase "> {{ langage.name }} </a>
+
+                  <!-- Route avec variable -->
+                  <a [routerLink]="['/langage' , langage.id]" class="dropdown-item text-uppercase"> {{ langage.name }} </a>
 
                 </li>
               </ul>
