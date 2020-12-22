@@ -25,6 +25,7 @@ import { ConnexionComponent } from './connexion/connexion.component';
 import { HomeComponent } from './home/home.component';
 import { AdminLangageComponent } from './admin-langage/admin-langage.component';
 import { AdminComponent } from './admin/admin.component';
+import { AddLinkComponent } from './add-link/add-link.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +39,8 @@ import { AdminComponent } from './admin/admin.component';
     ConnexionComponent,
     HomeComponent,
     AdminLangageComponent,
-    AdminComponent
+    AdminComponent,
+    AddLinkComponent
   ],
   imports: [
     BrowserModule,

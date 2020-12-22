@@ -1,0 +1,72 @@
+<!--  Partie formulaire de l'ajout -->
+<div *ngIf="toggle">
+    <!-- Debut de la modal add-link --> 
+    <div class="my-modal" id="modal-add-link" (click)="toggleModal()"  hidden>
+                    
+        
+    </div>
+    <div class="my-modal-body" id="modal-body-add-link" hidden>
+        <form (ngSubmit)="addLinkFunction()" #errorLink="ngForm" >
+            <div class="container my-3">
+                <h3>Ajout d'un lien pour {{selectLangage.name}} </h3>
+                <div class="form-group">
+                    <label for="url">Url du lien</label>
+                    <input type="text" name="link" id="url" class="form-control" [(ngModel)]="addLink.name" required #errorName="ngModel">
+                    
+                    <!-- PArtie erreur -->
+                    <div *ngIf="errorName.dirty && errorName.hasError('required')" class="text-danger">
+                        L'URL d'un lien est obligatoire.
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="description">Description</label>
+                    <textarea rows="5" name="desc" id="description" class="form-control" style="max-height: 240px;" [(ngModel)]="addLink.description" required #errorDesc="ngModel"></textarea>
+                     
+                    <!-- PArtie erreur -->
+                     <div *ngIf="errorDesc.dirty && errorDesc.hasError('required')" class="text-danger">
+                        La description d'un lien est obligatoire.
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <label for="cover">Cover</label>
+                        <input type="text" name="cover" id="cover" class="form-control" [(ngModel)]="addLink.cover" required #errorCover="ngModel">
+                        
+                        <!-- PArtie erreur -->
+                        <div *ngIf="errorCover.dirty && errorCover.hasError('required')" class="text-danger">
+                            La cover d'un lien est obligatoire.
+                        </div>
+                    </div>
+                    <div class="col">
+                        <label for="description-cover">Description de la cover</label>
+                        <input type="text" name="desc-cover" id="description-cover" class="form-control" [(ngModel)]="addLink.description_cover" required #errorDescCover="ngModel">
+                        
+                        <!-- PArtie erreur -->
+                        <div *ngIf="errorDescCover.dirty && errorDescCover.hasError('required')" class="text-danger">
+                            La description du cover d'un lien est obligatoire.
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center mt-4">
+                    <button class="my-btn btn" [disabled]="errorLink.invalid">Ajouter</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <!-- Fin de la modal add-link -->
+</div>
+<!--  Partie formulaire de l'ajout -->
+
+<!--  Partie verification de l'ajout -->
+<div *ngIf="!toggle">
+    <!-- Debut de la modal vefir ajout --> 
+    <div class="my-modal" id="modal-add-link" (click)="toggleModal()"  hidden>
+                    
+        
+    </div>
+    <div class="my-modal-body" id="modal-body-add-link" hidden>
+        
+    </div>
+    <!-- Fin de la modal verif ajout-->
+</div>
+<!--  Partie verification de l'ajout -->

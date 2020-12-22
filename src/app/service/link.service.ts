@@ -7,6 +7,8 @@ import { Link } from '../link';
 })
 export class LinkService {
 
+  urlApi = 'http://localhost:3000/links/';
+
   constructor(private http: HttpClient ) { 
     
   }
@@ -14,6 +16,13 @@ export class LinkService {
      * Méthode getLinks return les links
      */
     getLinks(): Promise<Link[]> {
-      return this.http.get<Link[]>('http://localhost:3000/links').toPromise();
+      return this.http.get<Link[]>(this.urlApi).toPromise();
+    }
+
+    /**
+     * Méthode qui ajoute un lien
+     */
+    addLink(link: Link): Promise<Link>{
+      return this.http.post<Link>(this.urlApi, link).toPromise();
     }
 }

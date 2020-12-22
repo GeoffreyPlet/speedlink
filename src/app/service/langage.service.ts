@@ -17,6 +17,13 @@ export class LangageService {
   getLangages(): Promise<Langage[]> {
     return this.http.get<Langage[]>(this.apiUrl).toPromise();
   }
+  /**
+   * 
+   * Methode pour avoir les langages actif
+   */
+  getLangagesNoTrash(): Promise<Langage[]> {
+    return this.http.get<Langage[]>(this.apiUrl+'?trash=false').toPromise();
+  }
 
   /**
    * Renvoie un langage selon l'id

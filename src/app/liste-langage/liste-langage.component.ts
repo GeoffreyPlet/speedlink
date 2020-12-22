@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { Langage } from '../langage';
 import { Link } from '../link';
 import { LangageService } from '../service/langage.service';
@@ -20,11 +20,12 @@ export class ListeLangageComponent implements OnInit {
 
   constructor(private serviceLangage: LangageService, private userService: UserService, private linkService: LinkService) { }
   session: Boolean;
-
+  hidden = true;
   langages: Langage[];
   selectLangage: Langage;
   selectLink: Link[] = [];
   display: Boolean = false;
+  addLink: Link;
 
 
 
@@ -79,6 +80,15 @@ export class ListeLangageComponent implements OnInit {
         
       }
       this.serviceLangage.trashLangage(this.selectLangage);
+    }
+    toggleModal(){
+      if(this.hidden){
+  
+        document.getElementById('modal-add-link').hidden = false;
+        document.getElementById('modal-body-add-link').hidden = false;
+        document.querySelector('body').style.overflowY = 'hidden';
+      }
+      
     }
  
 

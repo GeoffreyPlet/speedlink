@@ -48,10 +48,16 @@ export class CarouselComponent implements OnInit {
   }
   
   afterChange(e) {
-    console.log('afterChange');
-    var div = document.getElementsByClassName('slick-active')[0].id
-    this.currentLangage = this.mesLangages[div];
 
+    var div = document.getElementsByClassName('slick-active')[0].id
+
+    for (let i = 0; i < this.mesLangages.length; i++){
+      
+      if(parseInt(div) === this.mesLangages[i].id){
+        this.currentLangage = this.mesLangages[i];
+      }
+    }
+    
     /**
      * Récupere les links de db.json
      */
@@ -62,7 +68,6 @@ export class CarouselComponent implements OnInit {
 
       /* Vérification de la laison langage.id avec link.id_langage */
       for(let i =0 ; i < links.length; i++){
-        console.log(links[i].id_langage === this.currentLangage.id);
         if(links[i].id_langage === this.currentLangage.id)
         this.currentLinks.push(links[i]);
       } 
@@ -92,7 +97,7 @@ ngOnInit(): void {
      * this.lagages est mon tableau langages: Langage[] - Ref langage-link.component
      * Récupere les langages de db.json
      */
-  this.langageService.getLangages().then(langages => {
+  this.langageService.getLangagesNoTrash().then(langages => {
     this.mesLangages = langages;
     this.currentLangage = this.mesLangages[0];
 

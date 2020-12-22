@@ -7,4 +7,5 @@ export class Langage {
     name: string;
     description: string;
     cover: string;
+    trash: Boolean;
 }

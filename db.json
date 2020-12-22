@@ -33,7 +33,7 @@
       "name": "git",
       "description": "Langage back, permet de mettre en relation un server et un client",
       "cover": "",
-      "trash": true
+      "trash": false
     },
     {
       "id": 5,
@@ -136,6 +136,22 @@
       "cover": "testCover",
       "description_cover": "lorem lorem lorem lorem lorem loreml orem",
       "id_langage": 0
+    },
+    {
+      "id": 9,
+      "name": "https://github.com/FakerPHP/Faker",
+      "description": "Lorem Loremmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm mmmmmmmm mmmmm mmm mmmmmmmmm mmm mmmmmmmmmmmmmmmmmmmmmmmmmmmm m m mm m m m mmmmmmmmmmm m m m m m m m",
+      "cover": "testCover",
+      "description_cover": "lorem lorem lorem lorem lorem loreml orem",
+      "id_langage": 4
+    },
+    {
+      "id": 10,
+      "name": "https://github.com/FakerPHP/Faker",
+      "description": "Lorem Loremmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm mmmmmmmm mmmmm mmm mmmmmmmmm mmm mmmmmmmmmmmmmmmmmmmmmmmmmmmm m m mm m m m mmmmmmmmmmm m m m m m m m",
+      "cover": "testCover",
+      "description_cover": "lorem lorem lorem lorem lorem loreml orem",
+      "id_langage": 4
     }
   ],
   "admin": [

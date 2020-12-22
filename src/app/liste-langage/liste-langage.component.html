@@ -63,7 +63,7 @@
                                 <div class="form-group text-uppercase">
 
                                     <div class="row">
-                                        <div class="col">
+                                        <div class="col" hidden>
                                             <label for="id" class="mt-3 text-white">Id</label>
                                             <input type="text" name="id" id="id" class="form-control" [(ngModel)]="selectLangage.id" [value]="selectLangage.id" required>
                                         </div>
@@ -95,12 +95,30 @@
                         </div>
 
                         <!-- Dépendence langage -->
-                        <div class="col-12 color mt-3" *ngIf="display" >
+                        <div class="col-12 color mt-3" *ngIf="display" style="
+                        overflow-y: scroll;
+                        max-height: 110px;">
                             <h4 class="text-white p-0 text-center text-uppercase pt-3">
                                 Dépendence
                             </h4>
-                            <div *ngFor="let link of selectLink">
-                                {{link.name}}
+                            <div class="text-center">
+                                <button class="btn mb-3 my-btn" (click)="toggleModal()">
+                                    Ajouter un lien
+                                </button>
+                            </div>
+                            <div *ngFor="let link of selectLink" class="px-3 ">
+                                <div class="row my-2" style="background-color: #fff;">
+                                    <div class="col-10 text-center">
+                                       {{link.name}} 
+                                    </div>
+                                    <div class="col-1 text-center" style="background-color: red;">
+                                        X
+                                    </div>
+                                    <div class="col-1 text-center" style="background-color: green;">
+                                        M
+                                    </div>
+                                </div>
+                                
                             </div>
                         </div>
                     </div>
@@ -122,4 +140,11 @@
             </div>
             
         </div>
+
+        <!-- Debut add langage -->
+        <div *ngIf="selectLangage">
+           <app-add-link [selectLangage]="selectLangage"></app-add-link>
+
+        </div>
+        <!-- Debut add langage -->
 </div>
