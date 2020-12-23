@@ -32,4 +32,11 @@ export class LinkService {
     addLink(link: Link): Promise<Link>{
       return this.http.post<Link>(this.urlApi, link).toPromise();
     }
+    
+    /**
+     * Méthode pour la recherche de link
+     */
+    seachLink(search: String, id: Number): Promise<Link[]>{
+      return this.http.get<Link[]>(this.urlApi+'?id_langage='+id+'&q='+search).toPromise();
+    }
 }

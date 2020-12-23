@@ -10,20 +10,30 @@
                 <input type="text" name="search" id="search" class="form-control" [(ngModel)]="search" (keyup)=searchMethod()>
             </div>
         </form>
-    
-            <h3 class="text-uppercase text-center text-white" >{{langage.name}}</h3>
-            <a *ngFor="let link of links" [id]="'link-'+link.id" [href]="link.name" target="_blank">
-                <div class="row color-tint-border my-3 py-4 text-center">
-                    <div class="col-6 p-5 text-uppercase">
-                        {{link.cover}}
-                    </div>
-                    <div class="col-6 p-5 text-uppercase">
-                        {{link.description_cover}}
+            <div *ngIf="verifLink">
+                <h3 class="text-uppercase text-center text-white" >{{langage.name}}</h3>
+                <a *ngFor="let link of links" [id]="'link-'+link.id" [href]="link.name" target="_blank">
+                    <div class="row color-tint-border my-3 py-4 text-center">
+                        <div class="col-6 p-5 text-uppercase">
+                            {{link.cover}}
+                        </div>
+                        <div class="col-6 p-5 text-uppercase">
+                            {{link.description_cover}}
+                        </div>
+                        
                     </div>
                     
+                </a>
+            </div>
+            <div *ngIf="!verifLink">
+                <div class="container mt-5">
+                    <h3 class="text-uppercase text-center text-white">
+                        {{langage.name}}<br>
+                        <br>
+                        Nous n'avons pas trouvé votre recherche.
+                    </h3>
                 </div>
-                
-            </a>
+            </div>
     </div>
 </div>
 
@@ -35,5 +45,4 @@
             encore aucun liens n'a été enregistré 
         </h3>
     </div>
-    Salut
 </div>

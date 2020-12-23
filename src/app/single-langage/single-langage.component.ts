@@ -16,15 +16,18 @@ export class SingleLangageComponent implements OnInit {
   langage:Langage = new Langage();
   parma: Number;
   search: String;
+  verifLink: Boolean;
+  verifSearch: String = '';
   searchObject = {
     'search': [],
     'id': []
   };
-  searchGrid: Array<any> = [];
+  searchGrid: Link[];
 
   constructor(private route:ActivatedRoute, private serviceLink:LinkService, private serviceLangage:LangageService) { }
 
   ngOnInit( ): void {
+ 
     this.route.params.subscribe(params => {
       this.serviceLink.getLinkWithLangageId(params.id).then( link => {
 
@@ -33,27 +36,26 @@ export class SingleLangageComponent implements OnInit {
         });
         this.parma = params.id;
         this.links = link;
+        this.verifLink = true;
+        this.search = ''
       });
     });
   }
   searchMethod(){
-    for(let i = 0; i < this.links.length; i++){
-      this.searchObject.search.push(this.links[i].description_cover.split(' '));
-      this.searchObject.id.push(this.links[i].id);
-    }
-    for(let i = 0; i < this.searchObject.search.length; i++){
-      for(let j = 0; j < this.searchObject.search[i].length; j++){
-        for(let k = 0; k < this.searchObject.search[i][j].length; k++){
-          console.log(this.searchObject.search[i][j].charAt(k));
-        }
-      } 
-    }
-
-    this.searchObject = {
-      'search': [],
-      'id': []
-    };
+    this.serviceLink.seachLink(this.search, this.langage.id).then( links => {
+        
+     if(links.length != 0){
+       
+      this.links = links;
+      this.verifLink = true;
+     }
+     else{
+       this.verifLink = false;
+     }
+      
     
-  }
+    
+  });
+}
 
 }
