@@ -1,1 +1,39 @@
-<p>single-langage works!</p>
+<div class="fixe">
+</div>
+
+<div *ngIf="links.length != 0">
+     
+    <div class="container mt-5">
+        <form class="my-3">
+            <div class="col">
+                <label for="search" class="text-white">Recherhce</label>
+                <input type="text" name="search" id="search" class="form-control" [(ngModel)]="search" (keyup)=searchMethod()>
+            </div>
+        </form>
+    
+            <h3 class="text-uppercase text-center text-white" >{{langage.name}}</h3>
+            <a *ngFor="let link of links" [id]="'link-'+link.id" [href]="link.name" target="_blank">
+                <div class="row color-tint-border my-3 py-4 text-center">
+                    <div class="col-6 p-5 text-uppercase">
+                        {{link.cover}}
+                    </div>
+                    <div class="col-6 p-5 text-uppercase">
+                        {{link.description_cover}}
+                    </div>
+                    
+                </div>
+                
+            </a>
+    </div>
+</div>
+
+<div *ngIf="links.length == 0">
+    <div class="container mt-5">
+        <h3 class="text-uppercase text-center text-white">
+            {{langage.name}}<br>
+            <br>
+            encore aucun liens n'a été enregistré 
+        </h3>
+    </div>
+    Salut
+</div>

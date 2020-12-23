@@ -342,7 +342,7 @@
       "id": 0,
       "login": "admin",
       "mdp": "admin",
-      "session": true
+      "session": false
     }
   ]
 }

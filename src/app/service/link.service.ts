@@ -20,6 +20,13 @@ export class LinkService {
     }
 
     /**
+     *  Méthode getLinkWithLangageId
+     */
+    getLinkWithLangageId(langageId: Number): Promise<Link[]>{
+      return this.http.get<Link[]>(this.urlApi+'?id_langage='+langageId).toPromise();
+    }
+
+    /**
      * Méthode qui ajoute un lien
      */
     addLink(link: Link): Promise<Link>{
