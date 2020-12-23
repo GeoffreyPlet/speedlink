@@ -17,12 +17,7 @@ export class SingleLangageComponent implements OnInit {
   parma: Number;
   search: String;
   verifLink: Boolean;
-  verifSearch: String = '';
-  searchObject = {
-    'search': [],
-    'id': []
-  };
-  searchGrid: Link[];
+
 
   constructor(private route:ActivatedRoute, private serviceLink:LinkService, private serviceLangage:LangageService) { }
 
