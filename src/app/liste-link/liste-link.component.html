@@ -1,1 +1,23 @@
-Salut
+<div class="container mt-5">
+    <form action="">
+        <label for="search" class="text-white">Recherche</label>
+        <input class="w-100" type="text" name="search" id="search" (keyup)="search()" [(ngModel)]="searchWord">
+    </form>
+    <div *ngFor="let link of links" class="row cadre">
+        <div class="col-lg-10 d-flex flex-column justify-content-center">
+            {{link.name}}
+        </div>
+        <div class="col-lg-2 d-flex flex-column">
+            <button class="btn my-btn mb-3" (click)=toggle(link.id)>
+                Modifier
+            </button>
+            <button class="btn btn-danger">
+                Supprimer
+            </button>
+        </div>
+        <div class="cadre-modif" [id]="'modif-link-'+link.id" hidden>
+            {{link.id}}
+            
+        </div>
+    </div>
+</div>

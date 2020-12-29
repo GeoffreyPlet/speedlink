@@ -1,0 +1,25 @@
+.cadre{
+    color: #fff;
+    text-align: center;
+    border: 1px solid #04307c;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin: 1rem 0;
+    cursor: pointer;
+}
+.cadre-modif{
+    color: #04307c;
+    background-color: #fff;
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border: 3px solid #04307c;
+    position: fixed;
+    z-index: 4;
+    left: 0;
+    cursor: pointer;
+    bottom: 0;
+}
+label{
+    font-size: 2rem;
+}

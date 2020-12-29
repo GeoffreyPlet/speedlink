@@ -34,9 +34,16 @@ export class LinkService {
     }
     
     /**
-     * Méthode pour la recherche de link
+     * Méthode pour la recherche de link selon un langage
      */
     seachLink(search: String, id: Number): Promise<Link[]>{
       return this.http.get<Link[]>(this.urlApi+'?id_langage='+id+'&q='+search).toPromise();
+    }
+
+    /**
+     * Méthode pour rechercher lun link
+     */
+    seachAllLink(search: String): Promise<Link[]>{
+      return this.http.get<Link[]>(this.urlApi+'?q='+search).toPromise();
     }
 }
