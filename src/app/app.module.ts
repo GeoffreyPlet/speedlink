@@ -27,6 +27,7 @@ import { AdminLangageComponent } from './admin-langage/admin-langage.component';
 import { AdminComponent } from './admin/admin.component';
 import { AddLinkComponent } from './add-link/add-link.component';
 import { SingleLangageComponent } from './single-langage/single-langage.component';
+import { AdminLinkComponent } from './admin-link/admin-link.component';
 
 @NgModule({
   declarations: [
@@ -42,7 +43,8 @@ import { SingleLangageComponent } from './single-langage/single-langage.componen
     AdminLangageComponent,
     AdminComponent,
     AddLinkComponent,
-    SingleLangageComponent
+    SingleLangageComponent,
+    AdminLinkComponent
   ],
   imports: [
     BrowserModule,
@@ -56,6 +58,7 @@ import { SingleLangageComponent } from './single-langage/single-langage.componen
       { path: '', component: HomeComponent },
       { path: 'admin', component: AdminComponent },
       { path: 'admin/langage', component: AdminLangageComponent },
+      { path: 'admin/link', component: AdminLinkComponent },
       { path: 'langage/:id', component: SingleLangageComponent },
 
     ])

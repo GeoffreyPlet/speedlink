@@ -1,0 +1,18 @@
+
+<div *ngIf="session">
+    <div class="fixe">
+
+    </div>
+    <app-liste-link></app-liste-link>
+</div>
+
+<div *ngIf="!session">
+    <div class="fixe">
+
+    </div>
+    <div class="container mt-5">
+        <h3 class="text-center text-white">
+            Vous devez être connectez !
+        </h3>
+    </div>
+</div>
