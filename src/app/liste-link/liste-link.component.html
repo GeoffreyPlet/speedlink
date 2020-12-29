@@ -16,7 +16,14 @@
             </button>
         </div>
         <div class="cadre-modif" [id]="'modif-link-'+link.id" hidden>
-            {{link.id}}
+            <div class="row">
+                <div class="col-1" (click)="close()">
+                    X
+                </div>
+            </div>
+            <p>
+                Modification du lien d'id: {{link.id}}
+            </p>
             
         </div>
     </div>

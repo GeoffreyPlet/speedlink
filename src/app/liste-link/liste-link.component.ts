@@ -46,4 +46,12 @@ export class ListeLinkComponent implements OnInit {
     
   }
 
+  close(){
+    if(this.checkModif === true){
+      document.getElementById('modif-link-'+this.currentModif).hidden = true;
+      this.currentModif = null;
+      this.checkModif = false;
+    }
+  }
+
 }
