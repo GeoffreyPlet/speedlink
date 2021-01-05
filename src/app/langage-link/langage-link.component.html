@@ -6,49 +6,51 @@
         -->
         <div  *ngFor="let link of currentLinks; let i = index">
 
-            <!-- Debut link row sans reverse -->
-            <div *ngIf=" !(i % 2)" class="row mb-5">
-                <div class="col-sm-12 col-lg-6 align-self-center">
-                    <div class="grid  speed-border pl-4 text-white">
-                        {{ link.description }} <br>
-                        
-                    </div>
-                    <p class="text-right"> <a href="{{ link.name }}" target="_blank">Lien ...</a></p>
-                </div>
-                <div class="col-sm-12 col-lg-6 ">
-                    <div class="grid-img color-transparent color-tint-border shadow">
-                        <div class="filtre">
-                            {{ link.cover }}
-                            <p class="link-description px-3">{{ link.description_cover }}</p>
-                        </div>
-                        
-                    
-                    </div>
-                </div>
-            </div>
-            <!-- Fin link row sans reverse -->
+            <div *ngIf="i < 3">
 
-            <!-- Debut link row avec reverse -->
-            <div *ngIf=" (i % 2)" class="row flex-row-reverse  mb-5">
-                <div class="col-sm-12 col-lg-6 align-self-center">
-                    <div class="grid  speed-border-reverse pr-4 text-white">
-                        {{ link.description }} <br>
-                        
+            
+                <!-- Debut link row sans reverse -->
+                <div *ngIf=" !(i % 2)" class="row mb-5">
+                    <div class="col-sm-12 col-lg-6 align-self-center">
+                        <div class="grid  speed-border pl-4 text-white">
+                            {{ link.description }} <br>
+                            
+                        </div>
+                        <p class="text-right"> <a href="{{ link.name }}" target="_blank">Lien ...</a></p>
                     </div>
-                    <p class="text-left"> <a href="{{ link.name }}" target="_blank">Lien ...</a></p>
+                    <div class="col-sm-12 col-lg-6 ">
+                        <div class="grid-img color-transparent color-tint-border shadow">
+                            <div class="filtre">
+                                {{ link.cover }}
+                                <p class="link-description px-3">{{ link.description_cover }}</p>
+                            </div>
+                            
+                        
+                        </div>
+                    </div>
                 </div>
-                <div class="col-sm-12 col-lg-6 ">
-                    <div class="grid-img color-transparent color-tint-border shadow">
-                        <div class="filtre">
-                            {{ link.cover }}
-                            <p class="link-description px-3">{{ link.description_cover }}</p>
+                <!-- Fin link row sans reverse -->
+
+                <!-- Debut link row avec reverse -->
+                <div *ngIf=" (i % 2)" class="row flex-row-reverse  mb-5">
+                    <div class="col-sm-12 col-lg-6 align-self-center">
+                        <div class="grid  speed-border-reverse pr-4 text-white">
+                            {{ link.description }} <br>
+                            
+                        </div>
+                        <p class="text-left"> <a href="{{ link.name }}" target="_blank">Lien ...</a></p>
+                    </div>
+                    <div class="col-sm-12 col-lg-6 ">
+                        <div class="grid-img color-transparent color-tint-border shadow">
+                            <div class="filtre">
+                                {{ link.cover }}
+                                <p class="link-description px-3">{{ link.description_cover }}</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
             <!-- Fin link row avec reverse -->
         </div>
-        <div>
-           
-        </div>
+        <app-main></app-main>
 </div>

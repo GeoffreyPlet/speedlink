@@ -24,9 +24,7 @@ export class LangageLinkComponent implements OnInit {
     
     
   }
-  loadLink(){
-    alert("salut");
-  }
+ 
   
   
 

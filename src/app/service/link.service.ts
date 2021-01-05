@@ -53,4 +53,18 @@ export class LinkService {
     seachAllLink(search: String): Promise<Link[]>{
       return this.http.get<Link[]>(this.urlApi+'?q='+search).toPromise();
     }
+
+    /**
+     *  Méthode pour update un link
+     */
+    updateLink(link: Link): Promise<Link>{
+      return this.http.put<Link>(this.urlApi+''+link.id, link).toPromise();
+    }
+
+    /**
+     *  Méthode pour delete un lien
+     */
+    deleteLink(link: Link){
+      this.http.delete(this.urlApi+''+link.id).toPromise();
+    }
 }

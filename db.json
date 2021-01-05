@@ -73,26 +73,10 @@
   ],
   "links": [
     {
-      "id": 0,
-      "name": "https://github.com/",
-      "description": "Lorem Loremmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm mmmmmmmm mmmmm mmm mmmmmmmmm mmm mmmmmmmmmmmmmmmmmmmmmmmmmmmm m m mm m m m mmmmmmmmmmm m m m m m m m",
-      "cover": "testCover",
-      "description_cover": "lorem lorem lorem lorem lorem loreml orem",
-      "id_langage": 4
-    },
-    {
-      "id": 1,
-      "name": "https://about.gitlab.com/",
-      "description": "Lorem Loremmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm mmmmmmmm mmmmm mmm mmmmmmmmm mmm mmmmmmmmmmmmmmmmmmmmmmmmmmmm m m mm m m m mmmmmmmmmmm m m m m m m m",
-      "cover": "testCover",
-      "description_cover": "lorem lorem lorem lorem lorem loreml orem",
-      "id_langage": 4
-    },
-    {
       "id": 2,
       "name": "https://www.atlassian.com/fr/git/tutorials/undoing-changes/git-revert",
       "description": "Lorem Loremmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm mmmmmmmm mmmmm mmm mmmmmmmmm mmm mmmmmmmmmmmmmmmmmmmmmmmmmmmm m m mm m m m mmmmmmmmmmm m m m m m m m",
-      "cover": "testCover",
+      "cover": "modiftest",
       "description_cover": "lorem lorem lorem lorem lorem loreml orem",
       "id_langage": 4
     },
@@ -265,14 +249,6 @@
       "id_langage": 1
     },
     {
-      "name": "https://developer.mozilla.org/fr/docs/Web/HTML/Attributs/autocomplete",
-      "description": "autocomplete permet d'indiquer à l'agent utilisateur qu'une assistance de saisie automatique peut être fournie et également d'indiquer le type de donnée attendu.",
-      "cover": "doc web - MDN",
-      "description_cover": "doc - autocomplete",
-      "id": 24,
-      "id_langage": 1
-    },
-    {
       "name": "https://developer.mozilla.org/fr/docs/Web/HTML/Element/Input/password",
       "description": "Les éléments input de type \"password\" permettent à utilisateur de saisir un mot de passe sans que celui-ci ne soit lisible à l'écran.",
       "cover": "Doc web - MDN",
@@ -327,14 +303,6 @@
       "cover": "logotypemarker",
       "id": 31,
       "id_langage": 1
-    },
-    {
-      "name": "https://getbootstrap.com/docs/4.5/components/spinners/",
-      "description_cover": "spinner avec bootstrap",
-      "cover": "Bootstrap",
-      "description": "Icone de chargement facile et rapide.",
-      "id": 32,
-      "id_langage": 9
     }
   ],
   "admin": [
@@ -342,7 +310,7 @@
       "id": 0,
       "login": "admin",
       "mdp": "admin",
-      "session": true
+      "session": false
     }
   ]
 }

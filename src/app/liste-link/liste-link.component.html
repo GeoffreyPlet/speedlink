@@ -11,20 +11,68 @@
             <button class="btn my-btn mb-3" (click)=toggle(link.id)>
                 Modifier
             </button>
-            <button class="btn btn-danger">
+            <button class="btn btn-danger" (click)=delete(link);>
                 Supprimer
             </button>
         </div>
         <div class="cadre-modif" [id]="'modif-link-'+link.id" hidden>
-            <div class="row">
-                <div class="col-1" (click)="close()">
+            <div class="row justify-content-end">
+                <div class="col-1 pointer" (click)="close()">
                     X
                 </div>
             </div>
             <p>
                 Modification du lien d'id: {{link.id}}
             </p>
-            
+            <form (ngSubmit)="modifLink()" #error="ngForm">
+                <div class="row">
+                    <div class="col-6 text-left">
+                        <label for="name">Url</label>
+                        <input class="form-control" type="text" [(ngModel)]="currentLink.name" name="name" id="name" [placeholder]="link.name" required #errorUrl="ngModel">
+                        <div *ngIf="errorUrl.hasError('required')" class="text-danger">
+                            l'url est requi
+                        </div>
+                    </div>
+                    <div class="col-6 text-left">
+                        <label for="cover">Titre</label>
+                        <input class="form-control" type="text" [(ngModel)]="currentLink.cover" name="cover" id="cover" [placeholder]="link.cover" required #errorCover="ngModel">
+                        <div *ngIf="errorCover.hasError('required')" class="text-danger">
+                            le Titre est obligatoire
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6 text-left">
+                        <label for="description">Description</label>
+                        <input class="form-control" type="text" [(ngModel)]="currentLink.description" name="description" id="description" [placeholder]="link.description" required #errorDesc="ngModel">
+                        <div *ngIf="errorDesc.hasError('required')" class="text-danger">
+                            La description est obligatoire
+                        </div>
+                    </div>
+                    <div class="col-6 text-left">
+                        <label for="description-cover">Sous titre</label>
+                        <input class="form-control" type="text" [(ngModel)]="currentLink.description_cover" name="description-cover" id="description-cover" [placeholder]="link.description_cover" required #errorDescCover="ngModel">
+                        <div *ngIf="errorDescCover.hasError('required')" class="text-danger">
+                            Le sous titre est obligatoire
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center my-3">
+                    <div class="col-6 text-left">
+                        <label for="langage">Langage</label>
+                        <select name="langage" id="langage" class="col-9 text-center">
+                            <option *ngFor="let langage of langages" value="" [id]="'option-'+link.id+'-'+langage.id">
+                                {{langage.name}}
+                            </option>
+                        </select>
+                    </div>
+                </div>
+                <div>
+                    <button class="btn my-btn col-3">
+                        modifier
+                    </button>
+                </div>
+            </form>
         </div>
     </div>
 </div>

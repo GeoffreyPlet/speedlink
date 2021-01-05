@@ -1,6 +1,8 @@
 import { flatten } from '@angular/compiler';
 import { Component, OnInit } from '@angular/core';
+import { Langage } from '../langage';
 import { Link } from '../link';
+import { LangageService } from '../service/langage.service';
 import { LinkService } from '../service/link.service';
 
 @Component({
@@ -10,11 +12,13 @@ import { LinkService } from '../service/link.service';
 })
 export class ListeLinkComponent implements OnInit {
 
-  constructor(private linkService: LinkService) { }
+  constructor(private linkService: LinkService, private langageService: LangageService) { }
   /**
    * Mes variables
    */
+    langages: Langage[];
     links: Link[];
+    currentLink: Link = new Link();
     searchWord: String;
     checkModif: Boolean = false;
     currentModif: Number;
@@ -22,6 +26,9 @@ export class ListeLinkComponent implements OnInit {
   ngOnInit(): void {
     this.linkService.getLinks().then( link => {
       this.links = link;
+    });
+    this.langageService.getLangages().then( langage => {
+      this.langages = langage;
     });
   }
 
@@ -36,12 +43,18 @@ export class ListeLinkComponent implements OnInit {
 
   toggle(id){
     if( this.checkModif === false){
-      document.getElementById('modif-link-'+id).hidden = false;
-      this.currentModif = id;
-      this.checkModif = true;
+      this.linkService.getLinkById(id).then( link => {
+        this.currentLink = link;
+        console.log(this.currentLink);
+        document.getElementById('option-'+id+'-'+this.currentLink.id_langage).setAttribute('selected', '');
+        document.getElementById('modif-link-'+id).hidden = false;
+        this.currentModif = id;
+        this.checkModif = true;
+      });
+      
     }
     else{
-      alert('Terminer votre modification avant de la fermer');
+      alert('Terminer votre modification avant de changer de lien');
     } 
     
   }
@@ -52,6 +65,18 @@ export class ListeLinkComponent implements OnInit {
       this.currentModif = null;
       this.checkModif = false;
     }
+  }
+  modifLink(){
+    this.linkService.updateLink(this.currentLink);
+    location.reload();
+  }
+  delete(link){
+    let verif = prompt('Saisir O pour valider ou N pour annuler');
+    if (verif == 'O' || verif == 'o'){
+      this.linkService.deleteLink(link);
+      location.reload();
+    }
+    
   }
 
 }
