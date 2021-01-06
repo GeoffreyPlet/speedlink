@@ -3,7 +3,7 @@
  - Barre de recherche @DONE
 
 ## Fonctionnalité
- - Au clique sur un liens on obtiens une card detatil link
+ - Au clique sur un liens on obtiens une card detatil link @done
    # Card detail link
-    - Les information du lien
-    - la possibiliter de modifier, ou supprimer le lien
+    - Les information du lien @DONE
+    - la possibiliter de modifier, ou supprimer le lien @done

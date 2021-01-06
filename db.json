@@ -5,7 +5,7 @@
       "name": "css",
       "description": "Langage front, permet mettre en page les éléments du site",
       "cover": "C:\\fakepath\\3971.jpg",
-      "trash": true
+      "trash": false
     },
     {
       "id": 1,
@@ -72,78 +72,6 @@
     }
   ],
   "links": [
-    {
-      "id": 2,
-      "name": "https://www.atlassian.com/fr/git/tutorials/undoing-changes/git-revert",
-      "description": "Lorem Loremmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm mmmmmmmm mmmmm mmm mmmmmmmmm mmm mmmmmmmmmmmmmmmmmmmmmmmmmmmm m m mm m m m mmmmmmmmmmm m m m m m m m",
-      "cover": "modiftest",
-      "description_cover": "lorem lorem lorem lorem lorem loreml orem",
-      "id_langage": 4
-    },
-    {
-      "id": 3,
-      "name": "https://courses.boxydev.com/git/les-branches.html#gerer-les-branches",
-      "description": "Lorem Loremmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm mmmmmmmm mmmmm mmm mmmmmmmmm mmm mmmmmmmmmmmmmmmmmmmmmmmmmmmm m m mm m m m mmmmmmmmmmm m m m m m m m",
-      "cover": "testCover",
-      "description_cover": "lorem lorem lorem lorem lorem loreml orem",
-      "id_langage": 4
-    },
-    {
-      "id": 4,
-      "name": "https://github.com/cda-cambrai ",
-      "description": "Lorem Loremmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm mmmmmmmm mmmmm mmm mmmmmmmmm mmm mmmmmmmmmmmmmmmmmmmmmmmmmmmm m m mm m m m mmmmmmmmmmm m m m m m m m",
-      "cover": "testCover",
-      "description_cover": "lorem lorem lorem lorem lorem loreml orem",
-      "id_langage": 4
-    },
-    {
-      "id": 5,
-      "name": "https://www.atlassian.com/fr/git/tutorials/syncing/git-pull",
-      "description": "Lorem Loremmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm mmmmmmmm mmmmm mmm mmmmmmmmm mmm mmmmmmmmmmmmmmmmmmmmmmmmmmmm m m mm m m m mmmmmmmmmmm m m m m m m m",
-      "cover": "testCover",
-      "description_cover": "lorem lorem lorem lorem lorem loreml orem",
-      "id_langage": 4
-    },
-    {
-      "id": 6,
-      "name": "https://desktop.github.com/",
-      "description": "Lorem Loremmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm mmmmmmmm mmmmm mmm mmmmmmmmm mmm mmmmmmmmmmmmmmmmmmmmmmmmmmmm m m mm m m m mmmmmmmmmmm m m m m m m m",
-      "cover": "testCover",
-      "description_cover": "lorem lorem lorem lorem lorem loreml orem",
-      "id_langage": 4
-    },
-    {
-      "id": 7,
-      "name": "https://github.com/FakerPHP/Faker",
-      "description": "Lorem Loremmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm mmmmmmmm mmmmm mmm mmmmmmmmm mmm mmmmmmmmmmmmmmmmmmmmmmmmmmmm m m mm m m m mmmmmmmmmmm m m m m m m m",
-      "cover": "testCover",
-      "description_cover": "lorem lorem lorem lorem lorem loreml orem",
-      "id_langage": 4
-    },
-    {
-      "id": 8,
-      "name": "https://github.com/FakerPHP/Faker",
-      "description": "Lorem Loremmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm mmmmmmmm mmmmm mmm mmmmmmmmm mmm mmmmmmmmmmmmmmmmmmmmmmmmmmmm m m mm m m m mmmmmmmmmmm m m m m m m m",
-      "cover": "testCover",
-      "description_cover": "lorem lorem lorem lorem lorem loreml orem",
-      "id_langage": 0
-    },
-    {
-      "id": 9,
-      "name": "https://github.com/FakerPHP/Faker",
-      "description": "Lorem Loremmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm mmmmmmmm mmmmm mmm mmmmmmmmm mmm mmmmmmmmmmmmmmmmmmmmmmmmmmmm m m mm m m m mmmmmmmmmmm m m m m m m m",
-      "cover": "testCover",
-      "description_cover": "lorem lorem lorem lorem lorem loreml orem",
-      "id_langage": 4
-    },
-    {
-      "id": 10,
-      "name": "https://github.com/FakerPHP/Faker",
-      "description": "Lorem Loremmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm mmmmmmmm mmmmm mmm mmmmmmmmm mmm mmmmmmmmmmmmmmmmmmmmmmmmmmmm m m mm m m m mmmmmmmmmmm m m m m m m m",
-      "cover": "testCover",
-      "description_cover": "lorem lorem lorem lorem lorem loreml orem",
-      "id_langage": 4
-    },
     {
       "name": "https://developer.mozilla.org/fr/docs/Web/HTML",
       "description": "HTML permet d'inclure des images et d'autres contenus dans les pages web. Grâce à HTML, chacun peut créer des sites web aussi bien statiques que dynamiques.",
@@ -303,6 +231,246 @@
       "cover": "logotypemarker",
       "id": 31,
       "id_langage": 1
+    },
+    {
+      "name": "https://developer.mozilla.org/fr/docs/Web/CSS/:last-child",
+      "description": "La pseudo-classe :last-child permet de cibler un élément qui est le dernier enfant de son parent.",
+      "cover": "Doc web - MDN",
+      "description_cover": "last-child",
+      "id": 32,
+      "id_langage": 0
+    },
+    {
+      "name": "https://developer.mozilla.org/fr/docs/Web/CSS/:nth-child",
+      "description": "La pseudo-classe :nth-child(an+b) permet de cibler un élément qui possède an+b-1 éléments voisins (au même niveau) avant lui dans l'arbre du document pour des valeurs entières n et qui possède un élément parent.",
+      "cover": "Doc web - MDN",
+      "description_cover": "nth-child",
+      "id": 33,
+      "id_langage": 0
+    },
+    {
+      "name": "https://developer.mozilla.org/fr/docs/Web/CSS/margin",
+      "description": "La propriété margin définit la taille des marges sur les quatre côtés de l'élément. C'est une propriété raccourcie qui permet de manipuler les autres propriétés de marges : margin-top, margin-right, margin-bottom et margin-left.",
+      "cover": "Doc web - MDN",
+      "description_cover": "margin",
+      "id": 34,
+      "id_langage": 0
+    },
+    {
+      "name": "https://developer.mozilla.org/fr/docs/Web/CSS/position",
+      "description": "La propriété position définit la façon dont un élément est positionné dans un document. Les propriétés top, right, bottom et left déterminent l'emplacement final de l'élément positionné.",
+      "cover": "Doc web - MDN",
+      "description_cover": "position",
+      "id": 35,
+      "id_langage": 0
+    },
+    {
+      "name": "https://developer.mozilla.org/fr/docs/Web/CSS/opacity",
+      "description": "La propriété opacity définit la transparence d'un élément. Autrement dit, elle permet de définir le degré de visibilité de l'arrière-plan sur lequel est placé l'élément.",
+      "cover": "Doc web - MDN",
+      "description_cover": "opacity",
+      "id": 36,
+      "id_langage": 0
+    },
+    {
+      "name": "https://developer.mozilla.org/fr/docs/Web/CSS/z-index",
+      "description": "Le code source de cet exemple interactif est disponible dans un dépôt GitHub. Si vous souhaitez contribuez à ces exemples, n'hésitez pas à cloner https://github.com/mdn/interactive-examples et à envoyer une pull request !",
+      "cover": "Doc web - MDN",
+      "description_cover": "z-index",
+      "id": 37,
+      "id_langage": 0
+    },
+    {
+      "name": "https://developer.mozilla.org/fr/docs/Web/CSS/Comprendre_z-index/Ajout_de_z-index",
+      "description": "Cette propriété, dont l'attribut est une valeur entière (positive ou négative), représente la position de l'élément le long de l'axe Z. Pour se représenter cette notion, on peut imaginer que la page possède plusieurs couches, les unes au dessus des autres.",
+      "cover": "Doc web - MDN",
+      "description_cover": "Ajouter z-index",
+      "id": 38,
+      "id_langage": 0
+    },
+    {
+      "name": "https://code.tutsplus.com/fr/tutorials/the-30-css-selectors-you-must-memorize--net-16048",
+      "description": "Vous connaissez les sélecteurs de base - id, class et descendant - et vous vous dites que c'est déjà bien suffisant ? ",
+      "cover": "Code Envato",
+      "description_cover": "Les 30 Sélecteurs CSS à Absolument Connaître",
+      "id": 39,
+      "id_langage": 0
+    },
+    {
+      "name": "https://developer.mozilla.org/fr/docs/Web/CSS/Pseudo-classes",
+      "description": "Une pseudo-classe est un mot-clé qui peut être ajouté à un sélecteur afin d'indiquer l'état spécifique dans lequel l'élément doit être pour être ciblé par la déclaration.",
+      "cover": "Doc web - MDN",
+      "description_cover": "Pseudo-classes",
+      "id": 40,
+      "id_langage": 0
+    },
+    {
+      "name": "https://developer.mozilla.org/fr/docs/Web/CSS/box-shadow",
+      "description": "La propriété CSS box-shadow ajoute des ombres à la boîte d'un élément via une liste d'ombres séparées par des virgules. Une boîte d'ombre est définie avec des décalages horizontal et vertical par rapport à l'élément, avec des rayons de flou et d'étalement et avec une couleur.",
+      "cover": "Doc web - MDN",
+      "description_cover": "box-shadow",
+      "id": 41,
+      "id_langage": 0
+    },
+    {
+      "name": "https://css-tricks.com/transitions-only-after-page-load/",
+      "description": "If you've ever used CSS transitions on structural elements on your page, you may have noticed a case where you see that transition happen when the page",
+      "cover": "CSS-Tricks",
+      "description_cover": "Transition",
+      "id": 42,
+      "id_langage": 0
+    },
+    {
+      "name": "https://outils-css.aliasdmc.fr/generateur-de-triangles-css.php",
+      "description": "Comprendre la création d'un triangle en CSS basé sur les bordures et générer le code Css d'un triangle.",
+      "cover": "Outils CSS ",
+      "description_cover": "Générateur de triangle",
+      "id": 43,
+      "id_langage": 0
+    },
+    {
+      "name": "https://developer.mozilla.org/fr/docs/Web/CSS/filter-function/drop-shadow",
+      "description": "La fonction CSS drop-shadow() permet d'appliquer une ombre portée sur une image. Le résultat obtenu par cette fonction est une valeur filter-function.",
+      "cover": "Doc web - MDN",
+      "description_cover": "drop-shadow",
+      "id": 44,
+      "id_langage": 0
+    },
+    {
+      "name": "https://flexboxfroggy.com/#fr ",
+      "description": "Jeux pour découvrir le flex",
+      "cover": "Flexbox froggy",
+      "description_cover": "tutoriel",
+      "id": 45,
+      "id_langage": 0
+    },
+    {
+      "name": "https://developer.mozilla.org/fr/docs/Web/CSS/justify-content",
+      "description": "La propriété CSS justify-content indique la façon dont l'espace doit être réparti entre et autour des éléments selon l'axe principal d'un conteneur flexible ou selon l'axe en ligne lorsque le conteneur est une grille.",
+      "cover": "Doc web - MDN",
+      "description_cover": "justify-content",
+      "id": 46,
+      "id_langage": 0
+    },
+    {
+      "name": "https://developer.mozilla.org/fr/docs/Web/CSS/align-items",
+      "description": "La propriété CSS align-items définit la valeur de align-self sur l'ensemble des éléments-fils directs.\n",
+      "cover": "Doc web - MDN",
+      "description_cover": "align-item",
+      "id": 47,
+      "id_langage": 0
+    },
+    {
+      "name": "https://developer.mozilla.org/fr/docs/Web/CSS/flex-direction",
+      "description": "La propriété flex-direction définit la façon dont les éléments flexibles sont placés dans un conteneur flexible : elle définit l'axe principal et la direction des éléments (normale ou inversée).",
+      "cover": "Doc web - MDN",
+      "description_cover": "flex-direction",
+      "id": 48,
+      "id_langage": 0
+    },
+    {
+      "name": "https://developer.mozilla.org/fr/docs/Web/CSS/order",
+      "description": "La propriété order définit l'ordre avec lequel on dessine les éléments d'un conteneur d'éléments flexibles ou d'une grille d'éléments. ",
+      "cover": "Doc web - MDN",
+      "description_cover": "order",
+      "id": 49,
+      "id_langage": 0
+    },
+    {
+      "name": "https://developer.mozilla.org/fr/docs/Web/CSS/flex-wrap",
+      "description": "La propriété flex-wrap indique si les éléments flexibles sont contraints à être disposés sur une seule ligne ou s'ils peuvent être affichés sur plusieurs lignes avec un retour automatique.",
+      "cover": "Doc web - MDN",
+      "description_cover": "flex-wrap",
+      "id": 50,
+      "id_langage": 0
+    },
+    {
+      "name": "https://developer.mozilla.org/fr/docs/Web/CSS/flex-flow",
+      "description": "La propriété CSS flex-flow est une propriété raccourcie pour les propriétés flex-direction et flex-wrap.",
+      "cover": "Doc web - MDN",
+      "description_cover": "flex-flow",
+      "id": 51,
+      "id_langage": 0
+    },
+    {
+      "name": "https://developer.mozilla.org/fr/docs/Web/CSS/align-content",
+      "description": "La propriété CSS align-content définit la façon dont l'espace est réparti entre et autour des éléments le long de l'axe en bloc du conteneur (c'est-à-dire l'axe orthogonal à l'axe d'écriture).",
+      "cover": "Doc web - MDN",
+      "description_cover": "align-content",
+      "id": 52,
+      "id_langage": 0
+    },
+    {
+      "name": "https://developer.mozilla.org/fr/docs/Web/CSS/CSS_Flexible_Box_Layout/Concepts_de_base_flexbox",
+      "description": "Lorsqu'on décrit les boîtes flexibles comme une méthode de disposition unidimensionnelle, on indique en fait que les flexbox gèrent une seule dimension à la fois : une ligne ou une colonne. ",
+      "cover": "Doc web - MDN",
+      "description_cover": "flex-box",
+      "id": 53,
+      "id_langage": 0
+    },
+    {
+      "name": "https://marina-ferreira.github.io/tutorials/css/flexbox/",
+      "description": "Learn CSS Flexbox concepts from basic to advanced with this visual guide. Every flex property explained in details with images and gifs, so you can get the most out of the easiest layout aligning and positioning techniques.",
+      "description_cover": "flex-box tutoriel",
+      "cover": "Marina Ferreira",
+      "id": 54,
+      "id_langage": 0
+    },
+    {
+      "name": "https://getbootstrap.com/docs/4.5/layout/overview/#responsive-breakpoints",
+      "description": "Components and options for laying out your Bootstrap project, including wrapping containers, a powerful grid system, a flexible media object, and responsive utility classes.",
+      "cover": "Bootstrap",
+      "description_cover": "Overview",
+      "id": 55,
+      "id_langage": 9
+    },
+    {
+      "name": "https://developer.mozilla.org/fr/docs/Web/CSS/@media",
+      "description": "La règle @ @media permet d'associer un ensemble d'instructions imbriquées (délimité par des accolades) avec une condition définie par une requête média. ",
+      "cover": "Doc web - MDN",
+      "description_cover": "media",
+      "id": 56,
+      "id_langage": 0
+    },
+    {
+      "name": "https://www.alsacreations.com/xmedia/tuto/exemples/mediaqueries/index.html",
+      "description": "Comprendre les media",
+      "cover": "Tuto",
+      "description_cover": "Tutoriel media",
+      "id": 57,
+      "id_langage": 0
+    },
+    {
+      "name": "https://developer.mozilla.org/fr/docs/Web/CSS/outline",
+      "description": "La propriété outline est une propriété raccourcie qui permet de définir, dans une seule déclaration, une ou plusieurs des propriétés parmi outline-style, outline-width et outline-color.",
+      "description_cover": "outline",
+      "cover": "Doc web - MDN",
+      "id": 58,
+      "id_langage": 0
+    },
+    {
+      "name": "https://getbootstrap.com/docs/4.5/getting-started/introduction/",
+      "description": "Get started with Bootstrap, the world’s most popular framework for building responsive, mobile-first sites, with BootstrapCDN and a template starter page.",
+      "description_cover": "Débuter",
+      "cover": "Bootstrap",
+      "id": 59,
+      "id_langage": 9
+    },
+    {
+      "name": "https://icons.getbootstrap.com/",
+      "description": "Icone bootstrap",
+      "cover": "Bootstrap",
+      "description_cover": "icone",
+      "id": 60,
+      "id_langage": 9
+    },
+    {
+      "name": "https://getbootstrap.com/docs/4.5/components/carousel/",
+      "description": "A slideshow component for cycling through elements—images or slides of text—like a carousel.",
+      "cover": "Bootstrap",
+      "description_cover": "carousel",
+      "id": 61,
+      "id_langage": 9
     }
   ],
   "admin": [
@@ -310,7 +478,7 @@
       "id": 0,
       "login": "admin",
       "mdp": "admin",
-      "session": false
+      "session": true
     }
   ]
 }
